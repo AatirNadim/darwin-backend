@@ -11,8 +11,8 @@ export const login = async (req, res) => {
             password: password,
         });
         const token = createAccessToken(users);
-        console.log('user', users)
-        console.log('token', token);
+        // console.log('user', users)
+        // console.log('token', token);
         // jwt token here
         res.status(200).json({
             user: users,
